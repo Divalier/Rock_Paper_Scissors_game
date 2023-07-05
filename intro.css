@@ -1,0 +1,61 @@
+#intro {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  align-self: center;
+}
+
+.indetity {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.indetity-input,
+.indetity-button {
+  align-self: center;
+}
+
+.intro button {
+  border: none;
+  background-color: blue;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  align-self: center;
+}
+
+.intro button:hover {
+  opacity: 0.8;
+}
+
+.intro input {
+  height: 30px;
+  width: 300px;
+  border: none;
+}
+
+.intro input::placeholder {
+  color: black;
+  text-align: center;
+}
+h1 {
+  animation-name: intro;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes intro {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
